@@ -14,7 +14,9 @@ URLS = [
     "https://en.wikipedia.org/wiki/Avengers:_Endgame",
     "https://en.wikipedia.org/wiki/Real_Steel",
     "https://en.wikipedia.org/wiki/High_School_Musical",
-    "https://en.wikipedia.org/wiki/War_(2019_film)"
+    "https://en.wikipedia.org/wiki/War_(2019_film)",
+    "https://en.wikipedia.org/wiki/Bugonia_(film)",
+    "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)"
 ]
 
 os.makedirs("documents", exist_ok=True)
@@ -100,6 +102,7 @@ scrape_wikipedia_page(URLS[0], "avengers_endgame.txt")
 scrape_wikipedia_page(URLS[1], "real_steel.txt")
 scrape_wikipedia_page(URLS[2], "high_school_musical.txt")
 scrape_wikipedia_page(URLS[3], "war_2019.txt")
+scrape_wikipedia_page(URLS[4], "bugonia.txt")
+scrape_wikipedia_page(URLS[5], "alice_in_wonderland.txt")
 
 print("\n All pages scraped and saved successfully!")
-
