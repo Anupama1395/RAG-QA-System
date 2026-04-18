@@ -8,15 +8,18 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-BASE_DIR = "/home/ehr/Desktop/anupama/NLP_ASSIGNMENT-Building-RAG"
+BASE_DIR = "/data/home/sai/Desktop/RAG-QA-System-main/RAG-QA-System-main"
 QUESTIONS_FILE = os.path.join(BASE_DIR, "questions.txt")
 OUTPUT_FILE = os.path.join(BASE_DIR, "system_output_tfidf.txt")
-
+DOC_DIR = "/data/home/sai/Desktop/RAG-QA-System-main/RAG-QA-System-main/documents"
 DOCUMENT_FILES = [
     os.path.join(BASE_DIR, "avengers_endgame.txt"),
     os.path.join(BASE_DIR, "real_steel.txt"),
     os.path.join(BASE_DIR, "high_school_musical.txt"),
     os.path.join(BASE_DIR, "war_2019.txt"),
+    os.path.join(DOC_DIR, "alice_in_wonderland.txt"),
+    os.path.join(DOC_DIR, "bugonia.txt")
+
 ]
 
 CHUNK_SIZE = 120
